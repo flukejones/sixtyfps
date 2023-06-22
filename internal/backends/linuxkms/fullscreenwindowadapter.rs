@@ -25,9 +25,7 @@ impl WindowAdapter for FullscreenWindowAdapter {
     fn window(&self) -> &i_slint_core::api::Window {
         &self.window
     }
-}
 
-impl i_slint_core::window::WindowAdapterSealed for FullscreenWindowAdapter {
     fn size(&self) -> i_slint_core::api::PhysicalSize {
         self.renderer.size()
     }
